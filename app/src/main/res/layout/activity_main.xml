@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:strokeAttrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest"
+    tools:context=".MainActivity">
+
+    <com.example.tapstarters.StrokedTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap Starters"
+        android:fontFamily="@font/luckiest_guy"
+        android:textSize="60sp"
+        android:textColor="@color/pokemon_yellow"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        strokeAttrs:textStrokeColor="@color/pokemon_border"
+        strokeAttrs:textStrokeWidth="4"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="275dp"
+        android:layout_height="120dp"
+        android:text="Choose your starter!"
+        android:fontFamily="@font/bright_chalk"
+        android:textAlignment="center"
+        android:textColor="@color/pokemon_yellow"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="80dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:visibility="visible" />
+
+    <com.example.tapstarters.StrokedTextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="48sp"
+        android:fontFamily="@font/luckiest_guy"
+        android:textColor="@color/pokemon_yellow"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        strokeAttrs:textStrokeColor="@color/pokemon_border"
+        strokeAttrs:textStrokeWidth="4"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/tap"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:textSize="30sp"
+        android:background="@drawable/fire"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/evolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Evolve your Pokemon!"
+        android:textColor="@color/pokemon_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/squirtleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        android:text=" Squirtle "
+        android:textColor="@color/pokemon_border"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/charmanderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Charmander"
+        android:textColor="@color/pokemon_border"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bulbasaurBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bulbasaurBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:text="Bulbasaur"
+        android:textColor="@color/pokemon_border"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/charmanderImg"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/charmanderBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginRight="255dp"
+        android:layout_marginTop="200dp"
+        strokeAttrs:srcCompat="@drawable/charmander"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/bulbasaurImg"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@id/bulbasaurBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="170dp"
+        strokeAttrs:srcCompat="@drawable/bulbasaur"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/squirtleImg"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/squirtleBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="200dp"
+        strokeAttrs:srcCompat="@drawable/squirtle"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/charmanderImg2"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/charmander2"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/bulbasaurImg2"
+        android:layout_width="177dp"
+        android:layout_height="230dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/bulbasaur2" />
+
+    <ImageView
+        android:id="@+id/squirtleImg2"
+        android:layout_width="181dp"
+        android:layout_height="258dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/squirtle2" />
+
+    <ImageView
+        android:id="@+id/charmeleonImg"
+        android:layout_width="172dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/charmeleon"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/charizardImg"
+        android:layout_width="328dp"
+        android:layout_height="268dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        app:layout_constraintVertical_bias="1.0"
+        strokeAttrs:srcCompat="@drawable/charizard" />
+
+    <ImageView
+        android:id="@+id/ivysaurImg"
+        android:layout_width="221dp"
+        android:layout_height="256dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/ivysaur" />
+
+    <ImageView
+        android:id="@+id/venusaurImg"
+        android:layout_width="221dp"
+        android:layout_height="252dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/venusaur"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/wartotleImg"
+        android:layout_width="180dp"
+        android:layout_height="236dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/wartotle" />
+
+    <ImageView
+        android:id="@+id/blastoiseImg"
+        android:layout_width="235dp"
+        android:layout_height="246dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/blastoise" />
+
+    <ImageView
+        android:id="@+id/shinyCharizard"
+        android:layout_width="328dp"
+        android:layout_height="268dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        app:layout_constraintVertical_bias="1.0"
+        strokeAttrs:srcCompat="@drawable/shinycharizard" />
+
+    <ImageView
+        android:id="@+id/shinyVenusaur"
+        android:layout_width="221dp"
+        android:layout_height="252dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/shinyvenusaur"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/shinyBlastoise"
+        android:layout_width="235dp"
+        android:layout_height="246dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap"
+        strokeAttrs:srcCompat="@drawable/shinyblastoise" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
