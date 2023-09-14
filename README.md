@@ -4,22 +4,22 @@ Submitted by: Karan Komal
 
 Tap Starters is an android app that recreates a simple idle tapping game, using the thematics of Pokemon. 
 
-Time spent: 6 hours spent in total
+Time spent: 5-6 hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 - [X] **User can see a number displayed on the screen. The number starts at 0.**
-- [ ] **User can tap on a button to see the number displayed increase by 1.**
+- [X] **User can tap on a button to see the number displayed increase by 1.**
 
 The following **optional** features are implemented:
 
 - [X] User can exchange number of taps accumulated for upgrades. In this app, they are evolutions of the starting pokemon.
-      - Base Pokemon starts at 0.
-      - First evolution is at 100. This also makes the tap count go up by 2 per tap.
-      - Second evolution is at 250. This also makes the tap count go up by 5 per tap.
-      - Shiny transformation is at 1000. This also makes the tap count go up by 10 per tap.
+  * Base Pokemon starts at 0.
+  * First evolution is at 100. This also makes the tap count go up by 2 per tap.
+  * Second evolution is at 250. This also makes the tap count go up by 5 per tap.
+  * Shiny transformation is at 1000. This also makes the tap count go up by 10 per tap.
 - [X] Customize the app with a theme.
 
 The following **additional** features are implemented:
